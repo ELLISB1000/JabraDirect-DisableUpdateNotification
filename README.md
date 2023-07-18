@@ -57,7 +57,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-A script that can be deployed with either Intune or SCCM as a remediation to detect clients with update notificaitons enabled. This is done by checking for the config.json file in the users appdata and setting `DirectShowNotification` and `EnableFeedback` to `False`. If a config.json file is detected the remediation script will amend the values and save the config.json file.
+A script that can be deployed with either Intune or SCCM as a remediation to detect clients with update notifications enabled. This is done by checking for the config.json file in the users appdata and setting `DirectShowNotification` and `EnableFeedback` to `False`. If a config.json file is detected with the incorrect value the remediation script will amend the values and save the config.json file.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
