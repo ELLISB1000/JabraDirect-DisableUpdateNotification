@@ -70,11 +70,8 @@ Function Format-Json {
 
 # ---------------------------------------------------------------------------------
 # NAME: JabraDirect-DisableUpdateNotification
-# 
 # AUTHOR: Ellis Barrett - A365
-# 
 # CREATION DATE: 14/07/2022
-#
 # ---------------------------------------------------------------------------------
 
 Write-Output "- Configure Jabra Direct"

@@ -17,13 +17,13 @@ if (Test-path("$json"))
         If (($a.DirectShowNotification.value -eq $false) -and ($a.DirectShowNotification.locked -eq $true) -and ($a.EnableFeedback.value -eq $false) -and ($a.EnableFeedback.locked -eq $true))
         {
             Write-Output "Compliant"
-            #Exit 0
+            Exit 0
         } else {
             Write-Warning "Not Compliant"
-            #Exit 1
+            Exit 1
         }
 } else {
         Write-Output "Didn't find the Config File"
-        #Exit 0
+        Exit 0
     }
 
