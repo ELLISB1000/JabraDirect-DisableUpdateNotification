@@ -6,7 +6,7 @@
 
 # Get Config.json
 Write-Host "Check for Jabra Direct Config.json"
-$json = "$([Environment]::GetFolderPath("ApplicationData"))\Jabra Direct\config.json"
+$json = "$([Environment]::GetFolderPath("ApplicationData"))\Jabra Direct\jabradirectconfig.json"
 
 #Check if Config.json is present
 if (Test-path("$json")) 

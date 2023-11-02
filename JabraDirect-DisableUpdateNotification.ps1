@@ -75,7 +75,7 @@ Function Format-Json {
 # ---------------------------------------------------------------------------------
 
 Write-Output "- Configure Jabra Direct"
-$json = "$([Environment]::GetFolderPath("ApplicationData"))\Jabra Direct\config.json"
+$json = "$([Environment]::GetFolderPath("ApplicationData"))\Jabra Direct\jabradirectconfig.json"
 if (Test-path("$json")) {
         Write-Output "-- Found the Config File, applying changes"
         $a = Get-Content "$json" -Raw | ConvertFrom-Json
