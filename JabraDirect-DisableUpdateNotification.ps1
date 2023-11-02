@@ -72,10 +72,11 @@ Function Format-Json {
 # NAME: JabraDirect-DisableUpdateNotification
 # AUTHOR: Ellis Barrett - A365
 # CREATION DATE: 14/07/2022
+# CHANGE DATE: 2.11.2023
 # ---------------------------------------------------------------------------------
 
 Write-Output "- Configure Jabra Direct"
-$json = "$([Environment]::GetFolderPath("ApplicationData"))\Jabra Direct\config.json"
+$json = "$([Environment]::GetFolderPath("ApplicationData"))\Jabra Direct\jabradirectconfig.json"
 if (Test-path("$json")) {
         Write-Output "-- Found the Config File, applying changes"
         $a = Get-Content "$json" -Raw | ConvertFrom-Json

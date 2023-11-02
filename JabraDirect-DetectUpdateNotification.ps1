@@ -2,11 +2,12 @@
 # NAME: JabraDirect-DetectUpdateNotification
 # AUTHOR: Ellis Barrett - A365
 # CREATION DATE: 18/07/2023
+# CHANGE DATE: 2.11.2023
 # ---------------------------------------------------------------------------------
 
 # Get Config.json
 Write-Host "Check for Jabra Direct Config.json"
-$json = "$([Environment]::GetFolderPath("ApplicationData"))\Jabra Direct\config.json"
+$json = "$([Environment]::GetFolderPath("ApplicationData"))\Jabra Direct\jabradirectconfig.json"
 
 #Check if Config.json is present
 if (Test-path("$json")) 
